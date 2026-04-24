@@ -1,0 +1,43 @@
+body {
+font-family: Arial;
+margin: 0;
+background: #0f172a;
+color: white;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+padding: 15px;
+background: #1e293b;
+}
+
+button {
+margin: 5px;
+padding: 8px 12px;
+cursor: pointer;
+background: #334155;
+color: white;
+border: none;
+border-radius: 5px;
+}
+
+button:hover {
+background: #475569;
+}
+
+textarea, input {
+width: 100%;
+padding: 10px;
+margin-top: 10px;
+border-radius: 5px;
+border: none;
+}
+
+div {
+padding: 20px;
+}
+
+h1 {
+color: #38bdf8;
+}
