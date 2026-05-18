@@ -105,3 +105,80 @@ section {
 .contact-form button {
   margin-top: 10px;
 }
+/* Donation Hero */
+
+.donation-hero {
+
+text-align: center;
+
+padding: 60px 20px;
+
+background: #0A1F44;
+
+color: white;
+
+}
+
+
+/* Donation Container */
+
+.donation-container {
+
+display: flex;
+
+justify-content: center;
+
+padding: 30px 20px;
+
+}
+
+
+/* Donation Card */
+
+.donation-card {
+
+background: white;
+
+padding: 30px;
+
+border-radius: 16px;
+
+max-width: 500px;
+
+text-align: center;
+
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+}
+
+
+/* Donate Button */
+
+.donate-btn {
+
+margin-top: 20px;
+
+padding: 14px 24px;
+
+background: #00AEEF;
+
+border: none;
+
+border-radius: 10px;
+
+color: white;
+
+font-size: 16px;
+
+cursor: pointer;
+
+transition: 0.3s;
+
+}
+
+
+.donate-btn:hover {
+
+background: #008FCC;
+
+}
