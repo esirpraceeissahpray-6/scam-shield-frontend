@@ -254,3 +254,105 @@ left: 100%;
 }
 
 }
+/* Cyber Navbar */
+
+.navbar {
+
+position: sticky;
+
+top: 0;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+padding: 15px 20px;
+
+background: #0A1F44;
+
+backdrop-filter: blur(10px);
+
+z-index: 1000;
+
+}
+
+
+/* Logo */
+
+.logo {
+
+font-size: 20px;
+
+font-weight: bold;
+
+color: #00AEEF;
+
+}
+
+
+/* Nav Buttons */
+
+.nav-buttons {
+
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 10px;
+
+}
+
+
+/* Navbar Buttons */
+
+.nav-buttons button {
+
+padding: 10px 16px;
+
+border: none;
+
+border-radius: 8px;
+
+background: #00AEEF;
+
+color: white;
+
+cursor: pointer;
+
+transition: 0.3s;
+
+}
+
+
+/* Hover Effect */
+
+.nav-buttons button:hover {
+
+background: #008FCC;
+
+transform: scale(1.05);
+
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+.navbar {
+
+flex-direction: column;
+
+gap: 15px;
+
+}
+
+.nav-buttons {
+
+justify-content: center;
+
+}
+
+}
