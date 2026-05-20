@@ -356,3 +356,58 @@ justify-content: center;
 }
 
 }
+/* Logo Container */
+
+.logo {
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+color: #00AEEF;
+
+font-size: 20px;
+
+font-weight: bold;
+
+}
+
+
+/* Logo Image */
+
+.logo img {
+
+width: 50px;
+
+height: 50px;
+
+border-radius: 50%;
+
+object-fit: cover;
+
+box-shadow: 0 0 15px rgba(0,174,239,0.6);
+
+animation: logoGlow 4s infinite alternate;
+
+}
+
+
+/* Logo Glow Animation */
+
+@keyframes logoGlow {
+
+0% {
+
+box-shadow: 0 0 10px rgba(0,174,239,0.4);
+
+}
+
+100% {
+
+box-shadow: 0 0 22px rgba(0,174,239,0.9);
+
+}
+
+}
