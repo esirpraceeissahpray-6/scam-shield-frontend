@@ -564,3 +564,149 @@ font-size: 16px;
 }
 
 }
+/* Checker Section */
+
+.checker-section {
+
+display: flex;
+
+justify-content: center;
+
+padding: 60px 20px;
+
+}
+
+
+/* Checker Card */
+
+.checker-card {
+
+background: rgba(255,255,255,0.08);
+
+backdrop-filter: blur(10px);
+
+padding: 35px;
+
+border-radius: 18px;
+
+width: 100%;
+
+max-width: 700px;
+
+text-align: center;
+
+border: 1px solid rgba(255,255,255,0.1);
+
+box-shadow: 0 0 20px rgba(0,174,239,0.1);
+
+}
+
+
+/* Checker Title */
+
+.checker-card h1 {
+
+color: #00AEEF;
+
+margin-bottom: 15px;
+
+}
+
+
+/* Checker Text */
+
+.checker-card p {
+
+color: white;
+
+margin-bottom: 25px;
+
+line-height: 1.6;
+
+}
+
+
+/* Textarea */
+
+.checker-card textarea {
+
+width: 100%;
+
+height: 180px;
+
+padding: 15px;
+
+border-radius: 12px;
+
+border: none;
+
+resize: none;
+
+font-size: 16px;
+
+margin-bottom: 20px;
+
+outline: none;
+
+}
+
+
+/* Analyze Button */
+
+.checker-card button {
+
+padding: 14px 24px;
+
+border: none;
+
+border-radius: 10px;
+
+background: #00AEEF;
+
+color: white;
+
+font-size: 16px;
+
+cursor: pointer;
+
+transition: 0.3s;
+
+}
+
+
+/* Hover */
+
+.checker-card button:hover {
+
+background: #008FCC;
+
+transform: scale(1.05);
+
+}
+
+
+/* Result Box */
+
+.result-box {
+
+margin-top: 25px;
+
+padding: 18px;
+
+border-radius: 12px;
+
+background: rgba(255,255,255,0.06);
+
+color: white;
+
+min-height: 60px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+text-align: center;
+
+}
