@@ -230,23 +230,47 @@ Threat analysis results will appear here.
 
 </div>
 
-<!-- Report Scam -->
+<!-- Threat Reporting Section -->
 
-<div id="report" style="display:none">
+<div id="report" class="report-section" style="display:none">
 
-<h1>Report Scam</h1>
+<div class="report-card-ui">
 
-<input id="type" placeholder="Scam Type">
+<h1>Threat Intelligence Report</h1>
 
-<textarea id="reportMessage" placeholder="Describe scam"></textarea>
+<p>
+
+Submit suspicious scams, phishing attempts,
+fraud messages, or impersonation activity.
+
+</p>
+
+<input
+id="type"
+placeholder="Scam Type"
+/>
+
+<textarea
+id="reportMessage"
+placeholder="Describe the scam activity..."
+></textarea>
 
 <button onclick="submitReport()">
 
-Submit
+Submit Threat Report
 
 </button>
 
+<div class="report-status">
+
+Threat reports help improve public scam awareness.
+
 </div>
+
+</div>
+
+</div>
+
 
 <script src="script.js"></script>
 
