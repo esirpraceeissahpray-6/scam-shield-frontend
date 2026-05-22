@@ -867,3 +867,112 @@ background: rgba(255,255,255,0.06);
 color: white;
 
 }
+/* Footer */
+
+.footer {
+
+background: #07152E;
+
+padding-top: 50px;
+
+margin-top: 80px;
+
+color: white;
+
+}
+
+
+/* Footer Container */
+
+.footer-container {
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: space-between;
+
+gap: 40px;
+
+padding: 0 30px 40px;
+
+}
+
+
+/* Footer Sections */
+
+.footer-brand,
+.footer-links,
+.footer-awareness {
+
+flex: 1;
+
+min-width: 220px;
+
+}
+
+
+/* Footer Headings */
+
+.footer h2,
+.footer h3 {
+
+color: #00AEEF;
+
+margin-bottom: 15px;
+
+}
+
+
+/* Footer Text */
+
+.footer p {
+
+line-height: 1.7;
+
+color: #D8D8D8;
+
+}
+
+
+/* Footer Links */
+
+.footer-links a {
+
+display: block;
+
+margin-bottom: 10px;
+
+text-decoration: none;
+
+color: white;
+
+transition: 0.3s;
+
+}
+
+
+/* Footer Link Hover */
+
+.footer-links a:hover {
+
+color: #00AEEF;
+
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+
+text-align: center;
+
+padding: 20px;
+
+border-top: 1px solid rgba(255,255,255,0.1);
+
+font-size: 14px;
+
+color: #B0B0B0;
+
+}
