@@ -194,20 +194,39 @@ Investment Fraud
 </section>
 
 <!-- Scam Checker -->
+<!-- Scam Checker -->
 
-<div id="checker" style="display:none">
+<div id="checker" class="checker-section" style="display:none">
 
-<h1>Scam Checker</h1>
+<div class="checker-card">
 
-<textarea id="message" placeholder="Paste message here"></textarea>
+<h1>Scam Intelligence Analyzer</h1>
+
+<p>
+
+Paste suspicious messages, scam links,
+or phishing texts for analysis.
+
+</p>
+
+<textarea
+id="message"
+placeholder="Paste suspicious message here..."
+></textarea>
 
 <button onclick="checkMessage()">
 
-Analyze
+Analyze Threat
 
 </button>
 
-<h2 id="result"></h2>
+<div id="result" class="result-box">
+
+Threat analysis results will appear here.
+
+</div>
+
+</div>
 
 </div>
 
