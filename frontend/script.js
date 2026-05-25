@@ -1,46 +1,109 @@
-function showPage(page) {
+// Scam Shield Intelligence Engine (Frontend Simulation Layer)
 
-document.getElementById("home").style.display = "none";
-document.getElementById("checker").style.display = "none";
-document.getElementById("report").style.display = "none";
+// ---------- LINK SCANNER ----------
+function checkLink() {
+    const url = document.getElementById("urlInput").value;
+    const resultBox = document.getElementById("result");
 
-document.getElementById(page).style.display = "block";
+    if (!url) {
+        resultBox.innerHTML = "⚠️ Please enter a URL";
+        return;
+    }
 
+    let riskScore = calculateRisk(url);
+    let level = "";
+    let color = "";
+
+    if (riskScore >= 70) {
+        level = "HIGH RISK 🚨";
+        color = "red";
+    } else if (riskScore >= 40) {
+        level = "MEDIUM RISK ⚠️";
+        color = "orange";
+    } else {
+        level = "LOW RISK ✅";
+        color = "green";
+    }
+
+    resultBox.innerHTML = `
+        <div style="padding:15px;border-radius:12px;
+        background:${color};color:white;">
+            <h3>${level}</h3>
+            <p>Risk Score: ${riskScore}/100</p>
+            <p>${generateReason(url, riskScore)}</p>
+        </div>
+    `;
 }
 
-function checkMessage() {
+// ---------- RISK ENGINE ----------
+function calculateRisk(url) {
+    let score = 10;
 
-let message = document.getElementById("message").value;
+    // Fake phishing indicators
+    if (url.includes("login")) score += 25;
+    if (url.includes("verify")) score += 20;
+    if (url.includes("free")) score += 15;
+    if (url.includes("secure")) score += 10;
+    if (url.length > 40) score += 10;
+    if (url.includes("-")) score += 5;
+    if (!url.startsWith("https")) score += 20;
 
-let score = 0;
-
-// basic scam logic (we will replace with your backend AI later)
-if (message.toLowerCase().includes("otp")) score += 40;
-if (message.toLowerCase().includes("urgent")) score += 20;
-if (message.toLowerCase().includes("click")) score += 20;
-if (message.toLowerCase().includes("bank")) score += 10;
-
-let result = "";
-
-if (score >= 60)
-result = "🚨 HIGH RISK SCAM (Sentinel Alert)";
-else if (score >= 30)
-result = "⚠️ POSSIBLE SCAM";
-else
-result = "✅ LOW RISK";
-
-document.getElementById("result").innerText = result;
-
+    return Math.min(score, 100);
 }
 
+// ---------- REASON GENERATOR ----------
+function generateReason(url, score) {
+    if (score >= 70) {
+        return "Detected multiple phishing patterns and unsafe URL structure.";
+    } else if (score >= 40) {
+        return "Some suspicious indicators found in URL behavior.";
+    } else {
+        return "No strong scam patterns detected in analysis.";
+    }
+}
+
+// ---------- REPORT SYSTEM ----------
 function submitReport() {
+    const type = document.getElementById("type").value;
+    const message = document.getElementById("reportMessage").value;
 
-let type = document.getElementById("type").value;
-let message = document.getElementById("reportMessage").value;
+    if (!type || !message) {
+        alert("Please fill all required fields");
+        return;
+    }
 
-// Later this will send to your backend (FME layer)
-console.log("Reported:", type, message);
+    alert("🚨 Threat Report Submitted Successfully");
 
-alert("Report sent to Scam Shield system (MVP mode)");
+    console.log("New Scam Report:", {
+        type,
+        message,
+        time: new Date()
+    });
 
+    // Reset form
+    document.getElementById("type").value = "";
+    document.getElementById("reportMessage").value = "";
 }
+
+// ---------- SIMULATED ALERT FEED ----------
+function loadFakeAlerts() {
+    const alerts = [
+        "Fake bank SMS links detected in Kenya",
+        "WhatsApp impersonation scam spreading",
+        "Crypto investment fraud surge reported",
+        "Job offer phishing emails increasing"
+    ];
+
+    const container = document.getElementById("alerts");
+
+    if (!container) return;
+
+    container.innerHTML = alerts.map(a =>
+        `<li>🚨 ${a}</li>`
+    ).join("");
+}
+
+// Auto-load alerts on page load
+window.onload = function () {
+    loadFakeAlerts();
+};
