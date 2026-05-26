@@ -1123,3 +1123,123 @@ transform: translateX(-100%);
 }
 
 }
+/* Map Section */
+
+.map-section {
+
+padding: 80px 20px;
+
+text-align: center;
+
+}
+
+
+/* Map Title */
+
+.map-title {
+
+font-size: 38px;
+
+color: #00AEEF;
+
+margin-bottom: 15px;
+
+}
+
+
+/* Subtitle */
+
+.map-subtitle {
+
+color: #E5E5E5;
+
+margin-bottom: 40px;
+
+}
+
+
+/* Map Container */
+
+.map-container {
+
+display: flex;
+
+justify-content: center;
+
+}
+
+
+/* Grid */
+
+.map-grid {
+
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+gap: 20px;
+
+max-width: 900px;
+
+width: 100%;
+
+}
+
+
+/* Threat Node */
+
+.threat-node {
+
+padding: 25px;
+
+border-radius: 16px;
+
+font-weight: bold;
+
+backdrop-filter: blur(10px);
+
+border: 1px solid rgba(255,255,255,0.1);
+
+box-shadow: 0 0 15px rgba(0,174,239,0.1);
+
+transition: 0.3s;
+
+}
+
+
+/* Hover */
+
+.threat-node:hover {
+
+transform: scale(1.05);
+
+}
+
+
+/* Threat Levels */
+
+.high {
+
+background: rgba(255,0,0,0.18);
+
+color: #FFB3B3;
+
+}
+
+
+.medium {
+
+background: rgba(255,165,0,0.18);
+
+color: #FFD699;
+
+}
+
+
+.low {
+
+background: rgba(0,255,120,0.12);
+
+color: #B7FFD1;
+
+}
