@@ -976,3 +976,95 @@ font-size: 14px;
 color: #B0B0B0;
 
 }
+/* Alerts Section */
+
+.alerts-section {
+
+padding: 70px 20px;
+
+text-align: center;
+
+}
+
+
+/* Alerts Title */
+
+.alerts-title {
+
+color: #00AEEF;
+
+font-size: 36px;
+
+margin-bottom: 15px;
+
+}
+
+
+/* Alerts Subtitle */
+
+.alerts-subtitle {
+
+color: #E5E5E5;
+
+margin-bottom: 40px;
+
+font-size: 17px;
+
+}
+
+
+/* Alerts Feed */
+
+.alerts-feed {
+
+list-style: none;
+
+padding: 0;
+
+max-width: 850px;
+
+margin: auto;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 20px;
+
+}
+
+
+/* Alert Item */
+
+.alerts-feed li {
+
+background: rgba(255,255,255,0.08);
+
+padding: 20px;
+
+border-radius: 14px;
+
+backdrop-filter: blur(10px);
+
+border-left: 5px solid #00AEEF;
+
+color: white;
+
+text-align: left;
+
+box-shadow: 0 0 15px rgba(0,174,239,0.1);
+
+transition: 0.3s;
+
+}
+
+
+/* Hover Effect */
+
+.alerts-feed li:hover {
+
+transform: translateX(5px);
+
+box-shadow: 0 0 25px rgba(0,174,239,0.2);
+
+}
