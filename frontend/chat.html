@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Scam Shield Chat</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="shield-background"></div>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="logo.png" alt="Scam Shield Logo">
+
+<span>
+
+Scam Shield Intelligence
+
+</span>
+
+</div>
+
+<div class="nav-buttons">
+
+<a href="index.html">
+<button>Home</button>
+</a>
+
+<a href="blog.html">
+<button>Blog</button>
+</a>
+
+<a href="reports.html">
+<button>Alerts</button>
+</a>
+
+<a href="learning.html">
+<button>Learning</button>
+</a>
+
+<a href="donation.html">
+<button>Donate</button>
+</a>
+
+</div>
+
+</nav>
+
+<!-- Page Title -->
+
+<section class="chat-header">
+
+<h1>
+
+💬 Scam Shield Community & Assistant
+
+</h1>
+
+<p>
+
+Ask cybersecurity questions, discuss scam threats,
+and learn from the community.
+
+</p>
+
+</section>
+
+<!-- Tabs -->
+
+<div class="chat-tabs">
+
+<button class="chat-tab-btn" onclick="showChatTab('assistant')">
+
+🧠 Assistant
+
+</button>
+
+<button class="chat-tab-btn" onclick="showChatTab('community')">
+
+💬 Community
+
+</button>
+
+</div>
+
+<!-- Assistant -->
+
+<div id="assistant" class="chat-panel">
+
+<div class="assistant-box">
+
+<h2>
+
+Scam Shield Assistant
+
+</h2>
+
+<div id="assistantMessages" class="messages">
+
+<div class="assistant-message">
+
+Hello. Ask me anything about scams,
+phishing, fraud, or online safety.
+
+</div>
+
+</div>
+
+<input
+type="text"
+id="assistantInput"
+placeholder="Ask a question..."
+>
+
+<button onclick="sendAssistantMessage()">
+
+Send
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Community -->
+
+<div id="community" class="chat-panel" style="display:none;">
+
+<div class="community-box">
+
+<h2>
+
+Community Discussion
+
+</h2>
+
+<div id="communityMessages" class="messages">
+
+<div class="community-message">
+
+Welcome to the Scam Shield community.
+
+</div>
+
+</div>
+
+<input
+type="text"
+id="communityInput"
+placeholder="Share your experience..."
+>
+
+<button onclick="postCommunityMessage()">
+
+Post
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="footer">
+
+<div class="footer-bottom">
+
+© 2026 Scam Shield Intelligence
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
